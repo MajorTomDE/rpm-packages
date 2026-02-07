@@ -59,7 +59,7 @@ Kite, Oxygen/Breeze, and Redmond icon styles.
 
 echo "== plasma desktoptheme =="
 find %{buildroot}%{_datadir}/plasma -maxdepth 4 -type d -print || true
-find %{buildroot}%{_datadir}/plasma -maxdepth 6 -type f -name '*klassy*' -o -name '*Klassy*' || true
+find %{buildroot}%{_datadir}/plasma -maxdepth 6 \( -iname '*klassy*' -o -iname '*klassy*' \) -print || true
 
 %files
 %doc README.md AUTHORS
@@ -72,7 +72,8 @@ find %{buildroot}%{_datadir}/plasma -maxdepth 6 -type f -name '*klassy*' -o -nam
 %{_datadir}/icons/hicolor/scalable/apps/klassy-settings.svgz
 %{_datadir}/icons/klassy*
 %{_datadir}/kstyle/themes/klassy.themerc
-%{_datadir}/plasma/desktoptheme/klassy
+%{_datadir}/plasma/desktoptheme/kite-dark
+%{_datadir}/plasma/desktoptheme/kite-light
 %{_datadir}/plasma/layout-templates/org.kde.klassy*
 %{_datadir}/plasma/look-and-feel/org.kde.klassy*
 %{_libdir}/cmake/Klassy/KlassyConfig.cmake
