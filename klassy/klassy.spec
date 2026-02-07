@@ -1,11 +1,11 @@
 Name:           klassy
-Version:        v6.5.2
+Version:        6.5.2
 Release:        1%{?dist}
 Summary:        A highly customizable KDE Plasma Window Decoration
 
 License:        BSD-3-Clause AND CC0-1.0 AND GPL-2.0-only AND GPL-2.0-or-later AND GPL-3.0-only AND MIT
 URL:            https://github.com/paulmcauley/klassy
-Source:         %{url}/archive/%{version}.tar.gz
+Source:         %{url}/archive/v%{version}.tar.gz
 
 BuildRequires:  cmake
 BuildRequires:  cmake(KDecoration3)
