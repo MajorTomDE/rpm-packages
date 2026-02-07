@@ -76,6 +76,7 @@ find %{buildroot}%{_datadir}/plasma -maxdepth 6 \( -iname '*klassy*' -o -iname '
 %{_datadir}/plasma/desktoptheme/kite-light
 %{_datadir}/plasma/layout-templates/org.kde.klassy*
 %{_datadir}/plasma/look-and-feel/org.kde.klassy*
+%{_datadir}/locale/*/LC_MESSAGES/klassy_*.mo
 %{_libdir}/cmake/Klassy/KlassyConfig.cmake
 %{_libdir}/cmake/Klassy/KlassyConfigVersion.cmake
 %{_libdir}/libklassycommon5.so*
