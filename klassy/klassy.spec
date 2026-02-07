@@ -44,7 +44,7 @@ plugin for recent versions of the KDE Plasma desktop. It provides the Klassy,
 Kite, Oxygen/Breeze, and Redmond icon styles.
 
 %prep
-%autosetup -p1
+%autosetup -n %{name}-%{version}
 
 %build
 %cmake \
@@ -56,6 +56,10 @@ Kite, Oxygen/Breeze, and Redmond icon styles.
 
 %install
 %cmake_install
+
+echo "== plasma desktoptheme =="
+find %{buildroot}%{_datadir}/plasma -maxdepth 4 -type d -print || true
+find %{buildroot}%{_datadir}/plasma -maxdepth 6 -type f -name '*klassy*' -o -name '*Klassy*' || true
 
 %files
 %doc README.md AUTHORS
