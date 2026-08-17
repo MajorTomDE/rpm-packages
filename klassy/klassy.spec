@@ -69,6 +69,7 @@ find %{buildroot}%{_datadir}/plasma -maxdepth 6 \( -iname '*klassy*' -o -iname '
 %{_datadir}/applications/klassy-settings.desktop
 %{_datadir}/applications/klassystyleconfig.desktop
 %{_datadir}/color-schemes/*.colors
+%{_datadir}/config.kcfg/klassy*.kcfg
 %{_datadir}/icons/hicolor/scalable/apps/klassy-settings.svgz
 %{_datadir}/icons/klassy*
 %{_datadir}/kstyle/themes/klassy.themerc
